@@ -1,4 +1,5 @@
 # Perceptually uniform cmocean colormaps in MATLAB.
+[![View cmocean perceptually-uniform colormaps on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/57773-cmocean-perceptually-uniform-colormaps)
 
 ![](cmocean.png)
 
@@ -6,7 +7,7 @@
 [Click here](https://matplotlib.org/cmocean/) or a detailed description of cmocean and plenty of examples of the colormaps in action.  
 
 # Function documentation 
-Click here for online documentation that shows how to use the `cmocean` function. 
+[Click here](https://www.mathworks.com/matlabcentral/fileexchange/57773) for online documentation that shows how to use the `cmocean` function. You'll find the documentation under the Examples tab. 
 
 To access documentation from within Matlab, type 
 

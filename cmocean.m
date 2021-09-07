@@ -197,11 +197,6 @@ if negativeColormap
    cmap = colorspace('LAB->RGB',LAB); 
 end
 
-% Interpolate if necessary: 
-if NLevels~=size(cmap,1)
-   cmap = interp1(1:size(cmap,1), cmap, linspace(1,size(cmap,1),NLevels),'linear');
-end
-
 %% Invert the colormap if requested by user: 
 
 if InvertedColormap
@@ -215,6 +210,12 @@ if autopivot
    assert(PivotValue>=clim(1) & PivotValue<=clim(2),'Error: pivot value must be within the current color axis limits.') 
    maxval = max(abs(clim-PivotValue)); 
    cmap = interp1(linspace(-maxval,maxval,size(cmap,1))+PivotValue, cmap, linspace(clim(1),clim(2),size(cmap,1)),'linear');
+end
+
+%% Interpolate if necessary: 
+
+if NLevels~=size(cmap,1)
+   cmap = interp1(1:size(cmap,1), cmap, linspace(1,size(cmap,1),NLevels),'linear');
 end
 
 %% Clean up 
